@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+    /* font-family: 'Inter'; */
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
