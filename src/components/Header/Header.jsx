@@ -15,12 +15,12 @@ import Pic9 from "../../assets/pic9.svg";
 import Pic10 from "../../assets/pic10.svg";
 
 // Payout Images
-import Payout1 from "../../assets/payout1.svg";
-import Payout2 from "../../assets/payout2.svg";
-import Payout3 from "../../assets/payout3.svg";
-import Payout4 from "../../assets/payout4.svg";
-import Payout5 from "../../assets/payout5.svg";
-import Payout6 from "../../assets/payout6.svg";
+import Payout1 from "../../assets/Payout1.svg";
+import Payout2 from "../../assets/Payout2.svg";
+import Payout3 from "../../assets/Payout3.svg";
+import Payout4 from "../../assets/Payout4.svg";
+import Payout5 from "../../assets/Payout5.svg";
+import Payout6 from "../../assets/Payout6.svg";
 
 // Product Images
 import Product1 from "../../assets/product1.svg";
