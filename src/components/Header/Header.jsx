@@ -17,7 +17,7 @@ import Pic10 from "../../assets/pic10.svg";
 // Payout Images
 import Payout1 from "../../assets/Payout1.svg";
 import Payout2 from "../../assets/Payout2.svg";
-import Payout3 from "../../assets/Payout3.svg";
+// import Payout3 from "../../assets/Payout3.svg";
 import Payout4 from "../../assets/Payout4.svg";
 import Payout5 from "../../assets/Payout5.svg";
 import Payout6 from "../../assets/Payout6.svg";
@@ -53,7 +53,7 @@ export default function Header() {
   const payoutOptions = [
     { url: Payout1, title: "Smart Payouts", description: "Automate bulk payouts to vendors & suppliers", link: "/payoutmainhome" },
     { url: Payout2, title: "Salary Payouts", description: "Send employee salaries instantly & securely" },
-    { url: Payout3, title: "Refunds", description: "Process customer refunds with one click" },
+    // { url: Payout3, title: "Refunds", description: "Process customer refunds with one click" },
     { url: Payout4, title: "Loan Disbursals", description: "Disburse funds instantly to customers' accounts" },
     { url: Payout5, title: "Rewards & Incentives", description: "Distribute bonuses, cashback & incentives easily" },
     { url: Payout6, title: "Vendor Settlements", description: "Settle dues with vendors automatically" },

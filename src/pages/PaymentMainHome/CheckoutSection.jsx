@@ -1,4 +1,4 @@
-// sections/InstantCheckoutSection.js
+
 import React from "react";
 import Mobileoverlap from "../../assets/Mobileoverlap.svg";
 

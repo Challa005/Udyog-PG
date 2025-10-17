@@ -1,4 +1,4 @@
-// sections/AppFeaturesSection.js
+
 import React, { useState } from "react";
 import { ArrowRight, Zap, TrendingUp, CheckCircle, BarChart3 } from "lucide-react";
 import App from "../../assets/app.svg";
