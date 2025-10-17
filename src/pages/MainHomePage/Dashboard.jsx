@@ -25,13 +25,13 @@ export default function Dashboard() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1
-            className="flex justify-center text-5xl font-bold text-orange-600 mb-6 leading-tight"
+            className="flex justify-center text-5xl font-bold text-orange-600 mb-6 leading-tight mt-10"
             style={{ fontSize: "45px", lineHeight: 1.1 }}
           >
             All-in-one dashboard
           </h1>
 
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center mt-15">
             <button className="bg-orange-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors shadow-md">
               View Developer Document →
             </button>
@@ -41,7 +41,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20">
           <div className="space-y-4">
             {[
               "reports",

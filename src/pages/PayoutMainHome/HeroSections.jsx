@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
 
 // Import logos
 import Axisbank from "../../assets/axisbank.svg";
@@ -38,10 +38,10 @@ export default function HeroWithTabs() {
           "Say goodbye to manual recharges",
           "Enable instant transfers",
           "Automate direct fund transfers between accounts",
-          "Monitor transfer status, identify failures and assist in reconciliation"
+          "Monitor transfer status, identify failures and assist in reconciliation",
         ],
-        cta: "Learn More"
-      }
+        cta: "Learn More",
+      },
     },
     {
       name: "Corporate Credit Cards",
@@ -53,9 +53,9 @@ export default function HeroWithTabs() {
           "Launch instantly with our self-serve guided flow",
           "Manage multiple cards with ease",
           "Approve direct bank account recharges automatically",
-          "Ensure funds are available as you prefer"
-        ]
-      }
+          "Ensure funds are available as you prefer",
+        ],
+      },
     },
     {
       name: "Paytm Wallet",
@@ -67,9 +67,9 @@ export default function HeroWithTabs() {
           "Link your Paytm accounts instantly without any additional integration needed",
           "Make instant payouts to your beneficiary's Paytm wallets",
           "Boost success rates by defining transfer splits for other fund sources",
-          "Real-time transaction tracking and reporting"
-        ]
-      }
+          "Real-time transaction tracking and reporting",
+        ],
+      },
     },
     {
       name: "Multi-Bank Accounts",
@@ -81,10 +81,10 @@ export default function HeroWithTabs() {
           "Say goodbye to manual recharges",
           "Enable instant transfers across multiple banks",
           "Automatic fallback mechanisms for failed transactions",
-          "Maximize success with multi-bank accounts"
-        ]
-      }
-    }
+          "Maximize success with multi-bank accounts",
+        ],
+      },
+    },
   ];
 
   const logos = [
@@ -116,18 +116,22 @@ export default function HeroWithTabs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-orange-50">
       {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-6 py-20 text-center md:text-left">
+      <div className="max-w-6xl mx-auto  py-20 text-center md:text-left mt-5">
         <p className="text-black text-lg font-bold mb-4">Payouts Made Simple</p>
         <h1
-          className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight"
-          style={{ fontSize: "45px", lineHeight: 1.1 }}
+          className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight mt-10"
+          style={{ fontSize: "55px", lineHeight: 1.1 }}
         >
-          India's Leading Platform for <span className="text-orange-600">Instant Payments</span>
+          India's Leading Platform for{" "}
+          <span className="text-orange-600">Instant Payments</span>
         </h1>
-        <p className="text-lg md:text-xl text-black-700 font-bold mb-10 max-w-3xl">
-          India's largest disbursal platform lets you pay vendors, refund customers, and disburse loans instantly — 24×7, even on holidays — with a 99.98% success rate.
+        <p className="text-sm md:text-xl text-black-700 font-bold mb-10 max-w-3xl">
+          India's largest disbursal platform lets you pay vendors, refund
+          customers, and disburse loans instantly — 24×7, even on holidays —
+          with a 99.98% success rate.
         </p>
-        <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-8">
+
+        <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-25">
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg text-base transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
             Create Account &gt;
           </button>
@@ -138,58 +142,76 @@ export default function HeroWithTabs() {
       </div>
 
       {/* Tabs Section */}
-      <div className="max-w-6xl mx-auto px-6 py-6 -mt-10">
-        {/* Section Heading */}
-        <div className="mb-6 text-center md:text-left">
-          <h3 className="text-2xl font-bold text-black mb-2">
-            The Future of Payouts
-          </h3>
-          <p className="text-lg text-black font-medium max-w-3xl">
-            Add multiple Payout Fund Sources and pay your vendors, partners, employees, or customers into the destination payment mode of their choice.
-          </p>
-        </div>
-
-        {/* Tabs Navigation */}
-        <div className="mb-8 bg-white rounded-xl shadow-md p-3 border border-gray-200 flex">
-          {tabs.map((tab, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`flex-1 py-4 rounded-lg font-semibold transition-all duration-300 ${
-                activeTab === index
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-transparent text-gray-700 hover:bg-gray-50'
-              }`}
+      <div
+        className="w-full py-16 px-6 md:px-12 lg:px-24"
+        style={{ backgroundColor: "rgb(94,93,171)" }}
+      >
+        <div className="max-w-6xl mx-auto text-center text-white">
+          {/* Section Heading */}
+          <div className="mb-10 text-left">
+            <h3
+              className="font-bold mb-4"
+              style={{ fontSize: "35px", lineHeight: 1.1 }}
             >
-              {tab.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Tab Content */}
-        <div className="overflow-hidden">
-          <div
-            key={activeTab}
-            className={`${currentTab.color} border-2 rounded-2xl p-8 shadow-lg transition-opacity duration-500 ease-in-out opacity-100`}
-          >
-            <h2 className="text-3xl font-bold text-gray-900 mb-3">
-              {currentTab.content.title}
-            </h2>
-            <p className="text-lg text-gray-700 mb-6">{currentTab.content.description}</p>
-
-            <ul className="list-disc list-inside space-y-2 mb-6 text-gray-700">
-              {currentTab.content.features.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
-              ))}
-            </ul>
-
-            {currentTab.content.cta && (
-              <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all hover:gap-3 shadow-md">
-                {currentTab.content.cta}
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            )}
+              The Future of Payouts
+            </h3>
+            <p className="text-md md:text-lg font-bold max-w-3xl leading-relaxed">
+              Add multiple Payout Fund Sources and pay your vendors, partners,
+              employees, or customers into the destination payment mode of their
+              choice.
+            </p>
           </div>
+
+          {/* Tabs Navigation */}
+          <div className="mb-8 bg-white rounded-xl shadow-md p-3 border border-gray-200 flex flex-col md:flex-row justify-between mt-10 ">
+            {tabs.map((tab, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTab(index)}
+                className={`flex-1 py-4 rounded-lg font-bold transition-all duration-300 ${
+                  activeTab === index
+                    ? "bg-blue-600 text-white shadow-lg"
+                    : "bg-transparent text-gray-700 hover:bg-gray-50"
+                }`}
+              >
+                {tab.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Tab Content */}
+          <div className="overflow-hidden">
+  <div
+    key={activeTab}
+    className={`border-2 rounded-2xl p-8 shadow-lg transition-opacity duration-500 ease-in-out opacity-100 bg-white text-left`}
+  >
+    {/* Title */}
+    <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      {currentTab.content.title}
+    </h2>
+
+    {/* Description */}
+    <p className="text-lg text-gray-700 font-bold mb-6">
+      {currentTab.content.description}
+    </p>
+
+    {/* Features List */}
+    <ul className="list-disc list-inside space-y-2 mb-6 text-gray-700 font-bold">
+      {currentTab.content.features.map((feature, idx) => (
+        <li key={idx}>{feature}</li>
+      ))}
+    </ul>
+
+    {/* CTA Button */}
+    {currentTab.content.cta && (
+      <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all hover:gap-3 shadow-md">
+        {currentTab.content.cta}
+        <ArrowRight className="w-5 h-5" />
+      </button>
+    )}
+  </div>
+</div>
+
         </div>
       </div>
 

@@ -3,12 +3,14 @@ import { Suspense, lazy } from "react";
 import Header from "../components/Header/Header";
 import Spinner from "../components/Spinner/Spinner";
 import PaymentHeader from "../components/Header/PaymentHeader";
-import PayoutHeader from "../components/Header/PayoutHeader"; // ✅ New Header
+import PayoutHeader from "../components/Header/PayoutHeader";
+import OurProductHeader from "../components/Header/OurProductHeader";
 
 // Lazy imports
 const HomePage = lazy(() => import("../pages/MainHomePage/MainHome"));
 const PaymentMainHome = lazy(() => import("../pages/PaymentMainHome/PaymentMainHome"));
-const PayoutMainHome = lazy(() => import("../pages/PayoutMainHome/PayoutMainHome")); // ✅ Corrected path
+const PayoutMainHome = lazy(() => import("../pages/PayoutMainHome/PayoutMainHome"));
+const OurProductMainHome = lazy(() => import("../pages/OurProductMainHome/OurProductMainHome")); 
 
 // Loader component
 const Loader = () => (
@@ -26,6 +28,8 @@ const AppRoutes = () => {
       return <PaymentHeader />;
     } else if (location.pathname.startsWith("/payoutmainhome")) {
       return <PayoutHeader />;
+    } else if (location.pathname.startsWith("/ourproductmainhome")) {
+      return <OurProductHeader />;
     }
     return <Header />;
   };
@@ -42,7 +46,8 @@ const AppRoutes = () => {
             {/* Public Routes */}
             <Route path="/" element={<HomePage />} />
             <Route path="/paymentmainhome" element={<PaymentMainHome />} />
-            <Route path="/payoutmainhome" element={<PayoutMainHome />} /> {/* ✅ Added */}
+            <Route path="/payoutmainhome" element={<PayoutMainHome />} />
+            <Route path="/ourproductmainhome" element={<OurProductMainHome />} />
 
             {/* Redirect unknown routes */}
             <Route path="*" element={<Navigate to="/" replace />} />

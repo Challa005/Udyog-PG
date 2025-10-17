@@ -112,37 +112,39 @@ export default function GirlArc() {
 
         {/* Bottom CTA */}
         <div className="text-center relative mt-30">
-          <div
-            className="relative -mt-20 w-full py-12 flex justify-center"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(249,228,198,0.8) 0%, rgba(245,240,255,0.5) 100%)",
-            }}
-          >
-            <div className="w-full max-w-7xl grid grid-cols-5 text-center">
-              <div className="col-span-2 flex items-center justify-center">
-                <span className="text-xl font-bold text-[#5E5DAE]">
-                  Ready to get on board right away?
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <span className="text-xl font-bold text-[#5E5DAE]">
-                  Fast Activation
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <span className="text-xl font-bold text-[#5E5DAE]">
-                  Effortless Low-Code Integration
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <span className="text-xl font-bold text-[#5E5DAE]">
-                  24/7 Best-in-Class
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div
+    className="relative -mt-20 w-full py-12 flex justify-center"
+    style={{
+      background:
+        "linear-gradient(180deg, rgba(249,228,198,0.8) 0%, rgba(245,240,255,0.5) 100%)",
+    }}
+  >
+    <div className="w-full px-6 grid grid-cols-5 text-center max-w-[95rem]">
+      {/* First item spans 2 columns */}
+      <div className="col-span-2 flex items-center justify-center">
+        <span className="text-xl font-bold text-[#5E5DAE]">
+          Ready to get on board right away?
+        </span>
+      </div>
+      <div className="flex items-center justify-center">
+        <span className="text-xl font-bold text-[#5E5DAE]">
+          Fast Activation
+        </span>
+      </div>
+      <div className="flex items-center justify-center">
+        <span className="text-xl font-bold text-[#5E5DAE]">
+          Effortless Low-Code Integration
+        </span>
+      </div>
+      <div className="flex items-center justify-center">
+        <span className="text-xl font-bold text-[#5E5DAE]">
+          24/7 Best-in-Class
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

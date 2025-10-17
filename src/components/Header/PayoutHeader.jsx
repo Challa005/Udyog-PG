@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../assets/logo.png";
 
 export default function PayoutHeader() {
-  const navLinks = ["Payments", "Payouts", "Partners", "Our Product", "Support"];
+  const navLinks = ["Payments", "Payouts", "Our Product", "Partners",  "Support"];
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">

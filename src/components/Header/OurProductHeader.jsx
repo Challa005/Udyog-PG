@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
 
-export default function PaymentHeader() {
-  const navLinks = ["Payments", "Payouts", "Our Product", "Partners",  "Support"];
+export default function OurProductHeader() {
+  const navLinks = ["Payments", "Payouts","Our Product", "Partners",  "Support"];
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -25,7 +25,7 @@ export default function PaymentHeader() {
                 href={`#${item.toLowerCase().replace(" ", "")}`}
                 className={`relative font-medium transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:transition-all
                   ${
-                    item === "Payments"
+                    item === "Products"
                       ? "text-orange-500 after:w-full" 
                       : "text-gray-600 hover:text-orange-500 hover:after:w-full"
                   }`}
